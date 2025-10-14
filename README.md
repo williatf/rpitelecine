@@ -9,7 +9,6 @@ or dense film.
 
 Once captured, the folder of image files can be transferred to a PC for further processing.
 
-
 Futher information is available in this Github repository:
 
 * [Description of the electronics](docs/electronics.md)
