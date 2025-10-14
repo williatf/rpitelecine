@@ -12,7 +12,7 @@ git push origin "$BRANCH"
 
 # Sync files to Pi
 ssh "$PI_HOST" "mkdir -p $PI_PATH"
-rsync -avz --exclude '.git' --exclude '.github' . "$PI_HOST:$PI_PATH"
+rsync -avz --exclude '.github' . "$PI_HOST:$PI_PATH"
 
 # Update the Pi’s branch and restart
 ssh "$PI_HOST" << EOF
