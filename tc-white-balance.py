@@ -47,7 +47,7 @@
 import io
 import os
 import time
-import ConfigParser
+import configparser
 import picamera
 
 import rpiTelecine
@@ -104,7 +104,7 @@ print("Gain_r:{:.3f} Gain_b:{:.3f} Shutter:{}".format(gain_r,gain_b,shutter_spee
 # Write config file
 print('Writing config file {}'.format(configname))
 
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 with open(configname,'w') as f:
 	config.add_section('Telecine')
 	config.set('Telecine','gain_r',gain_r)

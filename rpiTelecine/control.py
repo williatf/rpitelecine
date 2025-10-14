@@ -57,7 +57,10 @@
 
 
 from __future__ import division
-from wiringpi2 import *
+try:
+    from wiringpi import *  # Preferred on newer RPi releases
+except ImportError:
+    from wiringpi2 import *  # Fallback for legacy installations
 
 class tcControl():
     

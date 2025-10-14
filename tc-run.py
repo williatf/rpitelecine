@@ -51,7 +51,7 @@ import argparse
 import os
 import time
 import threading
-import Queue
+import queue
 import cv2
 import numpy as np
 
@@ -108,7 +108,7 @@ def make_crop():
     crop_y = cy+cnf.crop_offset[1]
     return pf.cropToSlice( (crop_x, crop_y, cnf.crop_size[0],cnf.crop_size[1]) )
 
-q = Queue.Queue(10)
+q = queue.Queue(10)
 job_finished = False
 still_writing = True
 
